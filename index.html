@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Word Scramble Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/8dcZBoExvM4kj2hTZiho4gEiB3nx2IV4WNulkTvM2vznrBU3Ep6TBCgc8OAfpWR_MsY" type="image/x-icon">
     <link rel="shortcut icon" href="img/" type="image/x-icon">
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Word Scramble</h1>
         <h2>The word:</h2>
-        <h3 id="word"></h1>
+        <h3 id="word"></h3>
         <h3 id="hint">Hint: </h3>
-        <input type="text" name="" id="user">
+        <input type="text" id="user" placeholder="Type your answer here...">
         <br>
         <button id="refresh">Refresh Word</button>
         <button id="check">Check Word</button>
+        <p id="score">Score: 0</p>
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
 </body>
 </html>
