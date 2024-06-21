@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Scramble Game</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/8dcZBoExvM4kj2hTZiho4gEiB3nx2IV4WNulkTvM2vznrBU3Ep6TBCgc8OAfpWR_MsY" type="image/x-icon">
     <link rel="shortcut icon" href="img/" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <h1>Word Scramble</h1>
-        <h2>The word:</h2>
-        <h3 id="word"></h3>
-        <h3 id="hint">Hint: </h3>
+    <div class="container" data-aos="zoom-in">
+        <h1 data-aos="fade-up-right">Word Scramble</h1>
+        <h2 data-aos="fade-up-left">The word:</h2>
+        <h3 id="word" data-aos="flip-left"></h3>
+        <h3 id="hint" data-aos="flip-right">Hint: </h3>
         <input type="text" id="user" placeholder="Type your answer here...">
         <br>
         <button id="refresh">Refresh Word</button>
@@ -21,7 +25,10 @@
         <p id="score">Score: 0</p>
     </div>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="app.js"></script>
 </body>
